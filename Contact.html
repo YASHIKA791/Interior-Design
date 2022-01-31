@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+
+
+#fname{
+  margin-left:50px;
+  width:35%;
+}
+#lname{
+  margin-left:50px;
+  width:35%;
+  
+}
+#email{
+   margin-left:50px;
+   width:35%;
+   }
+#cnum{
+   margin-left:45px;
+   width:35%;
+}
+#cnum1{
+   margin-left:50px;
+   width:35%;
+}
+
+button{
+
+ position: relative;
+ left:55px;
+  
+}
+
+.button:active{
+
+transform: scale(1.1);
+
+}
+
+</style>
+</head>
+<body style="background-color:#f2f2f2;">
+
+<canvas id="myCanvas" width="200" height="100">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Contact Us",50,80);
+</script>
+<hr>
+
+    <p style="font-size: larger; margin-left:40px;"><i>Please fill in your personal details and our team will try to reply you at the earliest</i></p>
+
+   <form action="index.html" method="GET">
+
+    <div>
+    <label for="fname" style="margin-left:250px;"><b>YOUR FIRST NAME:</b></label>
+    <input type="text" name="fname" id="fname" required>
+</div>
+    <br>
+    <div>
+<label for="lname" style="margin-left:255px;"><b>YOUR LAST NAME:</b></label>
+<input type="text" name="lname" id="lname" required>
+    </div><br>
+
+<div>
+<label for="email" style="margin-left:240px;"><b>YOUR WORK EMAIL:</b></label>
+<input type="email" name="email" id="email" placeholder="abc@xyz.com" required>  
+</div><br>
+
+<div>
+<label for="cnum" style="margin-left:200px;"><b>YOUR CONTACT NUMBER:</b></label>
+<input type="tel" name="cnum" id="cnum">
+
+</div><br>
+
+<div>
+<label for="cnum1" style="margin-left:210px;"><b>ALTERNATIVE NUMBER:</b></label>
+<input type="tel" name="cnum1" id="cnum1">
+
+</div><br>
+  
+
+  <label for="feedback" style="font-size:larger; margin-left:210px;"><i>Any message? Go ahead..</i></label><br><br>
+  <textarea id="feedback" name="" rows="14" cols="30" style="font-size: larger;margin-left:460px; margin-top:-30px; width:35%;"></textarea>
+  <br><br>
+  
+  <p style="font-size: larger;margin-left:40px;">Alternatively, You can also contact us by phone 00553123-2323</i> </p>
+  
+  <center>
+  <button type="submit" id="button" style="background-color:skyblue;" onclick="contact()"><b>SUBMIT</b></button>&nbsp;&nbsp;&nbsp;
+  <button type="reset"  id="button" style="background-color:skyblue;"><b>RESET</b></button>
+  </center>
+<script>
+function contact()
+{
+var a=document.getElementById("fname").value;
+var b=document.getElementById("lname").value;
+var c=document.getElementById("email").value;
+var d=document.getElementById("cnum").value;
+var e=document.getElementById("cnum1").value;
+var f=document.getElementById("feedback").value;
+
+window.open("mailto:decor@company.com?subject=Contact us"+"&body="+"First Name-"+a+"%0d%0a"+"Last name-"+b+"%0d%0a"+"E-mail-"+c+"%0d%0a"+"Contact number-"+d+"%0d%0a"+"Alternative number-"+e+"%0d%0a"+"Feedback-"+f);
+}
+</script>
+</form>
+</body>
+</html>

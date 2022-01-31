@@ -1,0 +1,110 @@
+.hero-image {
+    background-image: url(../img/bg-hero.jpg);
+    min-height: 1500px;
+    margin: 0 auto;
+    padding: 70px 30px 70px 30px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.nav-bgdark {
+    background-color: orangered;
+    transition: background-color 200ms linear;
+    box-shadow: 4px 0 20px -5px rgba(0,0,0,.6);
+}
+.navarea {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    left: 0;
+}
+.nav-item a {
+    color: rgb(7, 6, 6);
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+.navbar2 .nav-item a {
+    opacity: 0.6;
+    transition: all;
+    transition-duration: 0.1s;
+    margin-right: 15px;
+}
+.navbar2 .nav-item a:hover {
+    opacity: 1;
+}
+.navbar2 .active > .nav-link {
+    opacity: 1;
+}
+.navbar-light .navbar-toggler {
+    font-size: medium;
+}
+@media (max-width: 768px){
+    .nav-item a {
+        font-size: 12px;
+    }
+
+    
+}
+@media (max-width: 345px){
+    .nav-item a {
+        font-size: 8px;
+    }
+    .container{
+        max-width:300px;
+
+    }
+    .container h1{
+        font-size:30px;
+      
+    }
+    .container h2{
+        font-size:22px;
+    }
+    .container-fluid h3{
+        font-size:20px;
+    }
+}
+
+@media(max-width:250px)
+{
+    .container h1{
+        font-size:22px;
+    }
+    .container h2{
+        font-size: 15px;
+    }
+}
+.img-responsive:hover{
+           
+    transform: scale(1.3);
+}
+.text{
+    margin:none;
+}
+.jumbotron .container{
+  border-left:2px solid black;
+  
+  margin-left:none;
+  font-family: 'Noto Serif', serif;
+ 
+}
+.jumbotron .container h2,.jumbotron .container p{
+ font-style:italic;
+ font-weight:500;
+ 
+}
+.container-fluid h3{
+ font-family: 'Noto Serif', serif;
+}
+.jumbotron{
+  background-image:url("../imgs/back.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-width:100%;
+  min-height:800px;
+
+  
+}
